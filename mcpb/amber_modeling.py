@@ -2,14 +2,23 @@
 This module contains the function to model leap input files for use.
 """
 
-from pymsmt.mol.mol import get_reslist
-from pymsmt.mol.pdbio import get_atominfo_fpdb, writepdb
-from pymsmt.mol.mol2io import get_atominfo
-from pymsmt.mol.getlist import get_mc_blist
-from pymsmt.mol.element import resnamel, IonHFEparal, IonCMparal, IonIODparal
-from pymsmt.lib import FF_DICT
-from pymsmt.mcpb.rename_residues import rename_res, get_diS_bond
-from pymsmt.exp import *
+#from pymsmt.mol.mol import get_reslist
+#from pymsmt.mol.pdbio import get_atominfo_fpdb, writepdb
+#from pymsmt.mol.mol2io import get_atominfo
+#from pymsmt.mol.getlist import get_mc_blist
+#from pymsmt.mol.element import resnamel, IonHFEparal, IonCMparal, IonIODparal
+#from pymsmt.lib import FF_DICT
+#from pymsmt.mcpb.rename_residues import rename_res, get_diS_bond
+#from pymsmt.exp import *
+
+from mol.mol import get_reslist
+from mol.pdbio import get_atominfo_fpdb, writepdb
+from mol.mol2io import get_atominfo
+from mol.getlist import get_mc_blist
+from mol.element import resnamel, IonHFEparal, IonCMparal, IonIODparal
+from lib import FF_DICT
+from mcpb.rename_residues import rename_res, get_diS_bond
+from exp import *
 import warnings
 import os
 

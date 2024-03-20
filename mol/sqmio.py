@@ -1,8 +1,11 @@
 "This module for SQM"
 
 import linecache
-from pymsmt.mol.mol import gauatm
-from parmed.periodic_table import AtomicNum
+#from pymsmt.mol.mol import gauatm
+#from parmed.periodic_table import AtomicNum
+
+from mol.mol import gauatm
+from mol.periodic_table import AtomicNum
 
 #------------------------------------------------------------------------------
 #------------------------------Write SQM input file----------------------------

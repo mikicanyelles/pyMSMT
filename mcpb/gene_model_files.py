@@ -31,7 +31,7 @@ from mol.gauio import (write_gauatm, write_gauatm_opth, write_gau_optf,
                        write_gau_fcf, write_gau_mkf)
 from mol.gmsio import (write_gmsatm, write_gms_optf, write_gms_fcf,                 
                        write_gms_mkf)
-from mol.nwchemio import (write_gmsatm, write_nwchem_optf, write_nwchem_fcf,                 
+from mol.nwchemio import (write_nwchem_optf, write_nwchem_fcf,                 
                           write_nwchem_mkf)
 from mol.sqmio import get_crdinfo_from_sqm, write_sqm_optf
 from lib import get_lib_dict

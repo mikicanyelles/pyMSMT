@@ -31,16 +31,29 @@ The Seminario method is from:
 # Load the MCPB module
 #==============================================================================
 
-from pymsmt.mcpb.gene_model_files import get_ms_resnames, gene_model_files
-from pymsmt.mcpb.resp_fitting import resp_fitting
-from pymsmt.mcpb.gene_pre_frcmod_file import gene_pre_frcmod_file
-from pymsmt.mcpb.gene_final_frcmod_file import (gene_by_empirical_way,
-          gene_by_QM_fitting_sem, gene_by_QM_fitting_zmatrix, gene_blank)
-from pymsmt.mcpb.amber_modeling import gene_leaprc
-from pymsmt.mol.element import resnamel
-from pymsmt.lib import FF_DICT
-from pymsmt.title import print_title
-from pymsmt.exp import *
+#from pymsmt.mcpb.gene_model_files import get_ms_resnames, gene_model_files
+#from pymsmt.mcpb.resp_fitting import resp_fitting
+#from pymsmt.mcpb.gene_pre_frcmod_file import gene_pre_frcmod_file
+#from pymsmt.mcpb.gene_final_frcmod_file import (gene_by_empirical_way,
+#          gene_by_QM_fitting_sem, gene_by_QM_fitting_zmatrix, gene_blank)
+#from pymsmt.mcpb.amber_modeling import gene_leaprc
+#from pymsmt.mol.element import resnamel
+#from pymsmt.lib import FF_DICT
+#from pymsmt.title import print_title
+#from pymsmt.exp import *
+
+from mcpb.gene_model_files import get_ms_resnames, gene_model_files
+from mcpb.resp_fitting import resp_fitting
+from mcpb.gene_pre_frcmod_file import gene_pre_frcmod_file
+from mcpb.gene_final_frcmod_file import (gene_by_empirical_way,
+                                          gene_by_QM_fitting_sem, 
+                                          gene_by_QM_fitting_zmatrix, 
+                                          gene_blank)
+from mcpb.amber_modeling import gene_leaprc
+from mol.element import resnamel
+from lib import FF_DICT
+from title import print_title
+from exp import *
 import warnings
 import os
 from optparse import OptionParser

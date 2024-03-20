@@ -1,8 +1,13 @@
 
-from parmed.amber import AmberParm
-from pymsmt.mol.element import AtnumRev
-from pymsmt.mol.rstio import read_rstf
-from pymsmt.mol.mol import *
+#from parmed.amber import AmberParm
+#from pymsmt.mol.element import AtnumRev
+#from pymsmt.mol.rstio import read_rstf
+#from pymsmt.mol.mol import *
+
+from amber import AmberParm
+from mol.element import AtnumRev
+from mol.rstio import read_rstf
+from mol.mol import *
 
 def read_amber_prm(pfile, cfile):
 

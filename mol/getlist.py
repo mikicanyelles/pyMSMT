@@ -3,9 +3,13 @@ This module use the bond linkage information to generate all the linkage
 (angle, dihedral and nonbonded) information.
 """
 
-from pymsmt.mol.mol import Linklist
-from pymsmt.mol.cal import calc_bond
-from pymsmt.mol.element import CoRadiiDict
+#from pymsmt.mol.mol import Linklist
+#from pymsmt.mol.cal import calc_bond
+#from pymsmt.mol.element import CoRadiiDict
+
+from mol.mol import Linklist
+from mol.cal import calc_bond
+from mol.element import CoRadiiDict
 
 #sort the barray diction to a list
 #barrayc = sorted(barray.iteritems(), key=lambda d:d[0])

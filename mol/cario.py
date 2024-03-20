@@ -3,10 +3,15 @@ This module is written for reading the atom and bond information from car
 file.
 """
 
-from pymsmt.mol.mol import Atom, Residue, Molecule
-from pymsmt.mol.element import ionnamel, METAL_PDB
-from pymsmt.mol.getlist import get_blist
-from pymsmt.exp import *
+#from pymsmt.mol.mol import Atom, Residue, Molecule
+#from pymsmt.mol.element import ionnamel, METAL_PDB
+#from pymsmt.mol.getlist import get_blist
+#from pymsmt.exp import *
+
+from mol.mol import Atom, Residue, Molecule
+from mol.element import ionnamel, METAL_PDB
+from mol.getlist import get_blist
+from exp import *
 import sys
 import linecache
 

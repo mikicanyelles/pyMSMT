@@ -5,9 +5,13 @@ constants from Gaussian output file.
 
 import numpy
 import linecache
-from pymsmt.exp import *
-from pymsmt.mol.constants import B_TO_A
-from parmed.periodic_table import AtomicNum
+#from pymsmt.exp import *
+#from pymsmt.mol.constants import B_TO_A
+#from parmed.periodic_table import AtomicNum
+
+from exp import *
+from mol.constants import B_TO_A
+from mol.periodic_table import AtomicNum
 
 #------------------------------------------------------------------------------
 #------------------------Write Gaussian input file-----------------------------

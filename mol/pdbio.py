@@ -2,10 +2,16 @@
 This is the code for reading and writting pdb files.
 """
 
-from pymsmt.mol.mol import Atom, Residue, Molecule, get_reslist
-from pymsmt.mol.getlist import get_pure_type, get_pure_num
-from pymsmt.mol.element import ionnamel, CoRadiiDict, METAL_PDB
-from pymsmt.exp import *
+#from pymsmt.mol.mol import Atom, Residue, Molecule, get_reslist
+#from pymsmt.mol.getlist import get_pure_type, get_pure_num
+#from pymsmt.mol.element import ionnamel, CoRadiiDict, METAL_PDB
+#from pymsmt.exp import *
+
+from mol.mol import Atom, Residue, Molecule, get_reslist
+from mol.getlist import get_pure_type, get_pure_num
+from mol.element import ionnamel, CoRadiiDict, METAL_PDB
+from exp import *
+
 
 def get_atominfo_fpdb(fname):
     Atoms = {}

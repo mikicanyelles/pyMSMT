@@ -3,9 +3,13 @@ This module is written for reading the atom and bond information from mol2
 file.
 """
 
-from pymsmt.mol.mol import Atom, Residue, Molecule
-from pymsmt.mol.element import ionnamel, METAL_PDB
-from pymsmt.exp import *
+#from pymsmt.mol.mol import Atom, Residue, Molecule
+#from pymsmt.mol.element import ionnamel, METAL_PDB
+#from pymsmt.exp import *
+
+from mol.mol import Atom, Residue, Molecule
+from mol.element import ionnamel, METAL_PDB
+from exp import *
 import sys
 import linecache
 

@@ -3,8 +3,11 @@ This module is used for getting the parameter information from mol2,
 dat, and frcmod files.
 """
 
-from pymsmt.mol.mol2io import get_atominfo
-from pymsmt.exp import *
+#from pymsmt.mol.mol2io import get_atominfo
+#from pymsmt.exp import *
+
+from mol.mol2io import get_atominfo
+from exp import *
 import os
 import numpy
 from scipy.optimize import curve_fit
@@ -50,14 +53,29 @@ _ljedre = re.compile(r'(\s*\w.)(\s+\w.)(\s+\-?\d+\.\d*)(\s+\-?\d+\.\d*)(\s+\-?\d
 #-----------------------------------------------------------------------------
 
 #Test amberhome or msmthome
-amberhome = os.getenv('AMBERHOME')
-if amberhome is None:
-    raise pymsmtError('Could not perform modeling without setting $AMBERHOME '
-                      'in the computer setting.')
-else:
-    cmdadd = amberhome + '/dat/leap/cmd/'
-    libadd = amberhome + '/dat/pymsmt/'
-    parmadd = amberhome + '/dat/leap/parm/'
+#amberhome = os.getenv('AMBERHOME')
+#if amberhome is None:
+#    raise pymsmtError('Could not perform modeling without setting $AMBERHOME '
+#                      'in the computer setting.')
+#else:
+#    cmdadd = amberhome + '/dat/leap/cmd/'
+#    libadd = amberhome + '/dat/pymsmt/'
+#    parmadd = amberhome + '/dat/leap/parm/'
+
+#amberhome = os.getenv('AMBERHOME')
+#if amberhome is None:
+#    raise pymsmtError('Could not perform modeling without setting $AMBERHOME '
+#                      'in the computer setting.')
+#else:
+dat_path = os.path.dirname(os.path.abspath(__file__))
+cmdadd  = os.path.join(dat_path, 'dat/cmd/')
+libadd  = os.path.join(dat_path, 'dat/pymsmt/')
+parmadd  = os.path.join(dat_path, 'dat/parm/')
+print(cmdadd)
+print(libadd)
+print(parmadd)
+#libadd  = './dat/pymsmt/'
+#parmadd = './dat/parm/'
 
 class force_field:
     def __init__(self, sleaprcf, mol2f, datf, frcmodfs=[]):

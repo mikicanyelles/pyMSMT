@@ -2,8 +2,13 @@
 
 import linecache
 import numpy
-from parmed.periodic_table import AtomicNum
-from pymsmt.mol.constants import B_TO_A
+#from pymsmt.exp import *
+#from pymsmt.mol.constants import B_TO_A
+#from parmed.periodic_table import AtomicNum
+
+from exp import *
+from mol.constants import B_TO_A
+from mol.periodic_table import AtomicNum
 
 #------------------------------------------------------------------------------
 #--------------------------Write GAMESS input file-----------------------------

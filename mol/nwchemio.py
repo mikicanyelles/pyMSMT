@@ -5,9 +5,13 @@ constants from NWChem output file.
 from __future__ import absolute_import, print_function, division
 import numpy
 import linecache
-from pymsmtexp import *
-from msmtmol.constants import B_TO_A
-from msmtmol.pt import AtomicNum
+#from pymsmtexp import *
+#from msmtmol.constants import B_TO_A
+#from msmtmol.pt import AtomicNum
+
+from exp import *
+from mol.constants import B_TO_A
+#from mol.periodic_table import AtomicNum
 
 #------------------------------------------------------------------------------
 #--------------------------Write GAMESS input file-----------------------------

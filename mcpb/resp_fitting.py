@@ -3,14 +3,23 @@ This module was written for generating the resp fitting input file and doing
 the RESP charge fitting.
 """
 
-from pymsmt.mol.mol import get_reslist
-from pymsmt.mol.element import Atnum
-from pymsmt.mol.pdbio import get_atominfo_fpdb
-from pymsmt.mol.getlist import get_mc_blist
-from pymsmt.mol.gauio import get_esp_from_gau
-from pymsmt.mol.gmsio import get_esp_from_gms
-from pymsmt.lib import get_lib_dict
-from pymsmt.exp import *
+#from pymsmt.mol.mol import get_reslist
+#from pymsmt.mol.element import Atnum
+#from pymsmt.mol.pdbio import get_atominfo_fpdb
+#from pymsmt.mol.getlist import get_mc_blist
+#from pymsmt.mol.gauio import get_esp_from_gau
+#from pymsmt.mol.gmsio import get_esp_from_gms
+#from pymsmt.lib import get_lib_dict
+#from pymsmt.exp import *
+
+from mol.mol import get_reslist
+from mol.element import Atnum
+from mol.pdbio import get_atominfo_fpdb
+from mol.getlist import get_mc_blist
+from mol.gauio import get_esp_from_gau
+from mol.gmsio import get_esp_from_gms
+from lib import get_lib_dict
+from exp import *
 import os
 
 def read_resp_file(fname):

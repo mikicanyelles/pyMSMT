@@ -1,5 +1,7 @@
 
-from pymsmt.mol.element import resnamel
+#from pymsmt.mol.element import resnamel
+
+from mol.element import resnamel
 
 """
 This is the code for defining the molecule class

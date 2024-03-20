@@ -13,16 +13,27 @@ the sub-matrix of the Hessian Matrix to generate the force constants.
 constants.
 """
 
-from pymsmt.mol.pdbio import get_atominfo_fpdb
-from pymsmt.mol.getlist import get_blist, get_mc_blist, get_alist
-from pymsmt.mol.gauio import (get_crds_from_fchk, get_matrix_from_fchk,
+#from pymsmt.mol.pdbio import get_atominfo_fpdb
+#from pymsmt.mol.getlist import get_blist, get_mc_blist, get_alist
+#from pymsmt.mol.gauio import (get_crds_from_fchk, get_matrix_from_fchk,
+#                           get_fc_from_log)
+#from pymsmt.mol.gmsio import get_crds_from_gms, get_matrix_from_gms
+#from pymsmt.mol.cal import calc_bond, calc_angle, calc_dih
+#from pymsmt.mol.element import ionnamel
+#from pymsmt.mol.constants import *
+#from pymsmt.lib import getfc, libadd
+#from pymsmt.exp import *
+
+from mol.pdbio import get_atominfo_fpdb
+from mol.getlist import get_blist, get_mc_blist, get_alist
+from mol.gauio import (get_crds_from_fchk, get_matrix_from_fchk,
                            get_fc_from_log)
-from pymsmt.mol.gmsio import get_crds_from_gms, get_matrix_from_gms
-from pymsmt.mol.cal import calc_bond, calc_angle, calc_dih
-from pymsmt.mol.element import ionnamel
-from pymsmt.mol.constants import *
-from pymsmt.lib import getfc, libadd
-from pymsmt.exp import *
+from mol.gmsio import get_crds_from_gms, get_matrix_from_gms
+from mol.cal import calc_bond, calc_angle, calc_dih
+from mol.element import ionnamel
+from mol.constants import *
+from lib import getfc, libadd
+from exp import *
 from numpy import average, array, dot, cross, std
 from numpy.linalg import eigvals, eig, norm
 import math
