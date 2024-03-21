@@ -97,7 +97,6 @@ def write_nwchem_mkf(nwcmkf, lgchg, SpinNum, gatms, largeopt, signum=3):
         f.write('title "ESP Charge Calculation"\n')
         f.write('charge {}\n'.format(lgchg))
         f.write('basis\n')
-        f.write('basis\n')
         f.write('  * library 6-31g*\n')
         f.write('end\n')
         f.write('geometry\n')
